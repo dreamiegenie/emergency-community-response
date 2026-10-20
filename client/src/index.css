@@ -726,9 +726,91 @@ button:hover .icon-orb {
   border-color: rgba(155, 224, 207, 0.18);
   box-shadow: inset 0 1px 0 rgba(224, 255, 246, 0.1), 0 18px 48px rgba(0, 10, 13, 0.24);
 }
+.dark .admin-shell {
+  color: #e5f6f1;
+}
+.dark .admin-header {
+  background: rgba(5, 15, 20, 0.96) !important;
+  border-color: rgba(137, 206, 194, 0.24) !important;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.3);
+}
+.dark .admin-shell .page-title,
+.dark .admin-shell .section-title {
+  color: #f1fffb;
+}
+.dark .admin-shell .eyebrow {
+  color: #7ce8bd;
+}
+.dark .admin-shell .page-description,
+.dark .admin-shell .text-muted-foreground {
+  color: #b9d5d1;
+}
+.dark .admin-header .text-primary {
+  color: #7ce8bd;
+}
+.dark .admin-header button {
+  border-color: rgba(145, 220, 207, 0.28);
+  background: #102d37;
+  color: #dff8f1;
+}
+.dark .admin-header button:hover {
+  background: #1a4652;
+  border-color: rgba(126, 232, 189, 0.55);
+}
+.dark .admin-header button:last-child {
+  background: transparent;
+  border-color: transparent;
+  color: #b9d5d1;
+}
+.dark .admin-header button:last-child:hover {
+  background: rgba(126, 232, 189, 0.12);
+  color: #f1fffb;
+}
+.dark .admin-panel {
+  background: rgba(21, 56, 67, 0.9);
+  border-color: rgba(145, 220, 207, 0.2) !important;
+}
 .dark .admin-protected {
-  background: linear-gradient(135deg, rgba(18, 63, 61, 0.92), rgba(23, 59, 69, 0.84));
-  border-color: rgba(101, 214, 173, 0.28);
+  background: linear-gradient(145deg, #123f3d, #173b45);
+  border-color: rgba(126, 232, 189, 0.34);
+}
+.dark .admin-protected .text-emerald-800,
+.dark .admin-protected .text-emerald-900\/75 {
+  color: #9af2cb;
+}
+.dark .admin-shell .bg-emerald-50 {
+  background: #174c45;
+}
+.dark .admin-shell .text-emerald-700,
+.dark .admin-shell .text-emerald-800 {
+  color: #86edc1;
+}
+.dark .admin-shell .bg-rose-50 {
+  background: #482934;
+}
+.dark .admin-shell .text-rose-700 {
+  color: #ffc0c9;
+}
+.dark .admin-shell .bg-cyan-50 {
+  background: #164e5c;
+}
+.dark .admin-shell .text-cyan-700,
+.dark .admin-shell .text-cyan-800 {
+  color: #a8eff1;
+}
+.dark .admin-shell .bg-violet-50 {
+  background: #3d315f;
+}
+.dark .admin-shell .text-violet-700 {
+  color: #ddc8ff;
+}
+.dark .admin-nav-active {
+  background: linear-gradient(135deg, #159f8f, #0f766e) !important;
+  color: #f1fffb !important;
+}
+.dark .admin-protected {
+  background: linear-gradient(145deg, #123f3d, #173b45);
+  border-color: rgba(126, 232, 189, 0.34);
 }
 .dark .admin-inset {
   background: rgba(16, 40, 51, 0.64);
