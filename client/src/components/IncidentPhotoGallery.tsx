@@ -41,7 +41,7 @@ export default function IncidentPhotoGallery({ incidentId, publicReference }: { 
   if (!photos.length) return null;
 
   return (
-    <section className="mt-5 rounded-2xl border border-cyan-100 bg-cyan-50/50 p-4" aria-label={`Photos attached to ${publicReference}`}>
+    <section className="incident-photo-gallery mt-5 rounded-2xl border border-cyan-100 bg-cyan-50/50 p-4" aria-label={`Photos attached to ${publicReference}`}>
       <div className="flex items-center gap-2 text-sm font-black text-cyan-950"><Images size={16} /> Report photos <span className="rounded-full bg-white px-2 py-0.5 text-[10px] text-cyan-800">{photos.length}</span></div>
       <p className="mt-1 text-xs leading-5 text-cyan-900/70">Images are stored in this browser for the local prototype; do not treat this view as a secure shared response system.</p>
       <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">

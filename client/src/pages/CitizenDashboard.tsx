@@ -729,7 +729,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f5f8f7] text-slate-950">
+    <div className="citizen-shell min-h-screen bg-[#f5f8f7] text-slate-950">
       <header className="sticky top-0 z-40 border-b border-white/70 bg-white/55 shadow-[0_12px_40px_rgba(6,63,61,0.08)] backdrop-blur-2xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
           <BrandLogo className="w-20 sm:w-24" imageClassName="rounded-xl" />

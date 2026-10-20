@@ -68,7 +68,7 @@ export default function IncidentPhotoPicker({
   const totalSize = photos.reduce((total, photo) => total + photo.size, 0);
 
   return (
-    <section className="rounded-2xl border border-cyan-100 bg-cyan-50/60 p-4" aria-label="Optional incident photos">
+    <section className="incident-photo-picker rounded-2xl border border-cyan-100 bg-cyan-50/60 p-4" aria-label="Optional incident photos">
       <div className="flex items-start gap-3">
         <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white text-cyan-800"><Images size={18} /></span>
         <div>
