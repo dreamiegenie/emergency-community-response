@@ -278,11 +278,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#f5f8f7] text-slate-950">
-      <header className="sticky top-0 z-40 border-b border-white/70 bg-white/55 shadow-[0_10px_35px_rgba(6,63,61,0.06)] backdrop-blur-2xl">
+      <header className="home-header sticky top-0 z-40 border-b border-white/70 bg-white/55 shadow-[0_10px_35px_rgba(6,63,61,0.06)] backdrop-blur-2xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <BrandLogo className="w-20 sm:w-24" imageClassName="rounded-xl" />
           <nav
-            className="hidden items-center gap-7 text-sm font-bold text-slate-500 md:flex"
+            className="home-nav hidden items-center gap-7 text-sm font-bold text-slate-500 md:flex"
             aria-label="Main navigation"
           >
             <a
@@ -312,13 +312,13 @@ export default function Home() {
             </button>
             <a
               href="/app"
-              className="rounded-full px-4 py-2 text-xs font-black text-slate-600 hover:bg-slate-100"
+              className="home-open-app rounded-full px-4 py-2 text-xs font-black text-slate-600 hover:bg-slate-100"
             >
               Open app
             </a>
             <button
               onClick={() => startLogin()}
-              className="rounded-full bg-[#063f3d] px-4 py-2 text-xs font-black text-white shadow-lg shadow-emerald-950/10 hover:-translate-y-0.5 hover:bg-[#075b55]"
+              className="home-sign-in rounded-full bg-[#063f3d] px-4 py-2 text-xs font-black text-white shadow-lg shadow-emerald-950/10 hover:-translate-y-0.5 hover:bg-[#075b55]"
             >
               Sign in
             </button>
@@ -332,7 +332,7 @@ export default function Home() {
           </button>
         </div>
         {menuOpen && (
-          <div className="border-t border-slate-100 bg-white px-4 py-4 md:hidden">
+          <div className="home-mobile-menu border-t border-slate-100 bg-white px-4 py-4 md:hidden">
             <div className="grid gap-2 text-sm font-bold text-slate-600">
               <button
                 type="button"
@@ -450,8 +450,8 @@ export default function Home() {
             </div>
             <div className="relative min-h-[420px]">
               <div className="beacon-halo absolute right-4 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full border border-emerald-200/20" />
-              <div className="glass-card relative z-10 rounded-[2rem] border border-white/20 bg-white/10 p-3 shadow-2xl shadow-black/20 backdrop-blur-2xl">
-                <div className="rounded-[1.5rem] bg-[#f4faf8]/95 p-6 shadow-inner shadow-white sm:p-8 sm:pr-40">
+              <div className="hero-promise-shell glass-card relative z-10 rounded-[2rem] border border-white/20 bg-white/10 p-3 shadow-2xl shadow-black/20 backdrop-blur-2xl">
+                <div className="hero-promise-panel rounded-[1.5rem] bg-[#f4faf8]/95 p-6 shadow-inner shadow-white sm:p-8 sm:pr-40">
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <p className="text-xs font-black uppercase tracking-[0.18em] text-emerald-700">
@@ -470,9 +470,9 @@ export default function Home() {
                     {pillars.map(({ icon: Icon, title, text }) => (
                       <div
                         key={title}
-                        className="flex gap-4 rounded-2xl border border-emerald-100 bg-white/75 p-4"
+                        className="hero-pillar flex gap-4 rounded-2xl border border-emerald-100 bg-white/75 p-4"
                       >
-                        <span className="icon-orb grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-emerald-50 text-emerald-700">
+                        <span className="hero-pillar-icon icon-orb grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-emerald-50 text-emerald-700">
                           <Icon size={18} />
                         </span>
                         <div>

@@ -432,6 +432,72 @@ button:hover .icon-orb {
   color: #ffb4bd;
 }
 
+/* Homepage dark mode: use an intentional near-black navigation and a
+   deep blue-teal promise panel so the light text stays readable. */
+.dark .home-header {
+  background: rgba(5, 14, 19, 0.94) !important;
+  border-color: rgba(137, 206, 194, 0.22) !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.28);
+}
+.dark .home-nav {
+  color: #c7d9d7;
+}
+.dark .home-nav a:hover,
+.dark .home-nav button:hover {
+  color: #7ce8bd;
+}
+.dark .home-open-app {
+  color: #c7d9d7;
+}
+.dark .home-open-app:hover {
+  background: rgba(126, 232, 189, 0.12);
+  color: #f2fffb;
+}
+.dark .home-sign-in {
+  background: #0f766e;
+  box-shadow: 0 10px 24px rgba(4, 20, 24, 0.34);
+}
+.dark .home-sign-in:hover {
+  background: #149b8d;
+}
+.dark .home-mobile-menu {
+  background: #07151b;
+  border-color: #29434b;
+  color: #d9eeea;
+}
+.dark .hero-promise-shell {
+  background: rgba(8, 25, 32, 0.78);
+  border-color: rgba(154, 226, 209, 0.3);
+  box-shadow:
+    inset 0 1px 0 rgba(236, 255, 249, 0.14),
+    0 24px 64px rgba(0, 8, 12, 0.34);
+}
+.dark .hero-promise-panel {
+  background: linear-gradient(145deg, #183b47 0%, #102c36 100%) !important;
+  box-shadow: inset 0 1px 0 rgba(232, 255, 249, 0.1);
+}
+.dark .hero-promise-panel > div:first-child p {
+  color: #7ce8bd;
+}
+.dark .hero-promise-panel > div:first-child h2 {
+  color: #f3fffc;
+}
+.dark .hero-pillar {
+  background: rgba(28, 73, 83, 0.9);
+  border-color: rgba(145, 220, 207, 0.22);
+  box-shadow: inset 0 1px 0 rgba(236, 255, 249, 0.07);
+}
+.dark .hero-pillar p:first-child {
+  color: #effffb;
+}
+.dark .hero-pillar p:last-child {
+  color: #b9d5d1;
+}
+.dark .hero-pillar-icon {
+  background: #17665f;
+  color: #9af2cb;
+}
+
 /* Admin control-center presentation layer. These classes intentionally style
    existing workflows without changing navigation, data access, or actions. */
 .admin-shell {
