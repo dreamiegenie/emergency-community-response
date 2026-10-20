@@ -498,6 +498,131 @@ button:hover .icon-orb {
   color: #9af2cb;
 }
 
+/* Dispatcher dark mode: keep the queue calm and operational, with distinct
+   surfaces for filters, incidents, details, and audit history. */
+.dark .dispatch-shell {
+  background:
+    radial-gradient(circle at 90% -8%, rgba(20, 184, 166, 0.14), transparent 30%),
+    linear-gradient(180deg, #0b1f26 0%, #091920 100%);
+}
+.dark .dispatch-entry-card,
+.dark .dispatch-header,
+.dark .dispatch-filters,
+.dark .dispatch-incident-card,
+.dark .dispatch-detail,
+.dark .dispatch-empty {
+  background: #122d37;
+  border-color: #2d5661;
+  box-shadow: 0 16px 40px rgba(0, 8, 12, 0.22);
+}
+.dark .dispatch-header {
+  background: rgba(6, 18, 24, 0.94);
+  border-color: rgba(137, 206, 194, 0.22);
+}
+.dark .dispatch-entry-card {
+  background: linear-gradient(145deg, #173c47, #102a34);
+}
+.dark .dispatch-entry-card .text-slate-500,
+.dark .dispatch-header .text-slate-500,
+.dark .dispatch-header .text-slate-400,
+.dark .dispatch-shell .text-slate-500,
+.dark .dispatch-shell .text-slate-600,
+.dark .dispatch-shell .text-slate-400 {
+  color: #b9d5d1;
+}
+.dark .dispatch-header .text-\[\#063f3d\] {
+  color: #7ce8bd;
+}
+.dark .dispatch-header a:hover {
+  background: rgba(126, 232, 189, 0.12);
+  color: #f2fffb;
+}
+.dark .dispatch-header button {
+  background: #1a3c47;
+  color: #d7eeea;
+}
+.dark .dispatch-header button:hover {
+  background: #245361;
+}
+.dark .dispatch-filters {
+  background: rgba(18, 45, 55, 0.94);
+}
+.dark .dispatch-shell select {
+  background: #0d2630;
+  border-color: #3b7180;
+  color: #e8faf5;
+}
+.dark .dispatch-shell select:focus {
+  outline: 2px solid rgba(101, 214, 173, 0.45);
+  outline-offset: 1px;
+}
+.dark .dispatch-incident-card {
+  background: #153541;
+  border-color: #2e5c68;
+}
+.dark .dispatch-incident-card:hover {
+  background: #1a414d;
+  border-color: #65d6ad;
+  box-shadow: 0 18px 40px rgba(0, 8, 12, 0.34);
+}
+.dark .dispatch-incident-card.border-emerald-400 {
+  border-color: #65d6ad;
+  box-shadow: 0 0 0 3px rgba(101, 214, 173, 0.2), 0 18px 40px rgba(0, 8, 12, 0.3);
+}
+.dark .dispatch-priority {
+  background: #29434b;
+  color: #d4e8e5;
+}
+.dark .dispatch-priority.bg-rose-100 {
+  background: #6b3040;
+  color: #ffd1d7;
+}
+.dark .dispatch-photo-badge {
+  background: #164e5c;
+  color: #a8eff1;
+}
+.dark .dispatch-status-badge {
+  background: #18564d;
+  color: #9af2cb;
+}
+.dark .dispatch-empty {
+  background: rgba(18, 45, 55, 0.72);
+  border-color: #3b6570;
+}
+.dark .dispatch-empty svg {
+  color: #7fabb1;
+}
+.dark .dispatch-detail {
+  background: linear-gradient(145deg, #173b47 0%, #102b35 100%);
+}
+.dark .dispatch-close:hover {
+  background: rgba(126, 232, 189, 0.13);
+  color: #effffb;
+}
+.dark .dispatch-subpanel {
+  background: #102d37;
+  border: 1px solid #2d5661;
+}
+.dark .dispatch-control {
+  background: #0d2630;
+  border-color: #3b7180;
+  color: #e8faf5;
+}
+.dark .dispatch-timeline {
+  border-color: #2d5661;
+}
+.dark .dispatch-shell .bg-emerald-50 {
+  background: #174c45;
+}
+.dark .dispatch-shell .text-emerald-700,
+.dark .dispatch-shell .text-emerald-800 {
+  color: #7ee8bd;
+}
+.dark .dispatch-shell .bg-emerald-500 {
+  background: #29b989;
+  color: #06251f;
+}
+
 /* Admin control-center presentation layer. These classes intentionally style
    existing workflows without changing navigation, data access, or actions. */
 .admin-shell {
